@@ -1,5 +1,5 @@
 import pypinyin
-f = open("name.txt","r")
+f = open("name.txt","r", encoding='UTF-8')
 f1 = open("pinyin_name.txt","a+")
 for i in f.readlines():
 	aa = pypinyin.lazy_pinyin(i)
